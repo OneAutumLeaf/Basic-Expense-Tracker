@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ExpenseItems from "./components/Expenses/ExpenseItems";
 import Expenses from "./components/Expenses/Expenses";
 function App() {
   const expense = [
@@ -25,7 +24,8 @@ function App() {
   ];
 
   return (
-    <div><Expenses items={expense}/>
+    <div>
+      <Expenses items={expense} />
     </div>
   );
 }
